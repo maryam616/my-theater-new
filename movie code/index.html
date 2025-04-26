@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name=maryam theater content="width=device-width, initial-scale=1.0">
+  <title>welcome to my THEATER </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="theater">
+    <h1>movie theater🎬🎭</h1>
+    <p>🦋Welcome to Maryam's theater🦋  </p> 
+
+    <div class="content">
+      <div class="info-box">
+        <h2>short video about life:</h2>
+        <hr>
+        <br>
+     
+      </div>
+
+      <div class="video-box">
+        <video controls>
+            <source src="media/trailer.mp4.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+         
+        </video>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="playAgain()">Play the video again Again</button>
+      <button onclick="rateMovie()">Rate the movie </button>
+    </div>
+  </section>
+
+  <script>
+    function playAgain() {
+      const video = document.querySelector('video');
+      video.currentTime = 0;
+      video.play();
+    }
+
+    function rateMovie() {
+      alert('Thanks for watching!');
+    }
+  </script>
+
+</body>
+</html>
